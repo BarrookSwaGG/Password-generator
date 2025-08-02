@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Password Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Password Idea Generator 🔐</h1>
+
+  <label>
+    Length:
+    <input type="number" id="length" min="4" max="32" value="12">
+  </label><br>
+
+  <label><input type="checkbox" id="uppercase" checked> Include Uppercase</label><br>
+  <label><input type="checkbox" id="lowercase" checked> Include Lowercase</label><br>
+  <label><input type="checkbox" id="numbers" checked> Include Numbers</label><br>
+  <label><input type="checkbox" id="symbols" checked> Include Symbols</label><br><br>
+
+  <button onclick="generatePassword()">Generate Password</button>
+  <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+  <button onclick="exportPasswords()">Export History</button>
+
+  <div id="output">
+    <p><strong>Password:</strong> <span id="result">Click generate</span></p>
+    <button onclick="copyPassword()">Copy</button>
+    <p id="strength"></p>
+  </div>
+
+  <div id="history">
+    <h2>Generated Passwords History</h2>
+    <ul id="historyList"></ul>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+body {
+  font-family: sans-serif;
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+  background: #f4f4f4;
+  color: #333;
+  transition: background 0.3s, color 0.3s;
+}
+
+label {
+  display: block;
+  margin: 5px 0;
+}
+
+button {
+  margin: 5px 5px 10px 0;
+  padding: 10px 16px;
+  background: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#output, #history {
+  margin-top: 20px;
+  background: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.dark {
+  background: #121212;
+  color: #e0e0e0;
+}
+
+.dark #output, .dark #history {
+  background: #1e1e1e;
+}
+
+#result {
+  font-weight: bold;
+  font-size: 1.1em;
+}
